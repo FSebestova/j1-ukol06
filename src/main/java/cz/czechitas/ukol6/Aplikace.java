@@ -50,7 +50,6 @@ public class Aplikace extends JFrame {
         add(husyLabel);
         add(husyField);
 
-
         kraliciField = new JTextField();
         kraliciLabel = new JLabel("Kralici");
         kraliciLabel.setLabelFor(kraliciField);
@@ -58,7 +57,6 @@ public class Aplikace extends JFrame {
         kraliciField.setHorizontalAlignment(JTextField.TRAILING);
         add(kraliciLabel);
         add(kraliciField);
-
 
 
         add(createButtonBar(),"span");
@@ -74,7 +72,6 @@ public class Aplikace extends JFrame {
         add(pocetHlavLabel);
         add(pocetHlavField);
 
-
         pocetNohouField = new JTextField();
         pocetNohouLabel = new JLabel("Počet nohou");
         pocetNohouLabel.setLabelFor(pocetNohouField);
@@ -83,11 +80,7 @@ public class Aplikace extends JFrame {
         add(pocetNohouLabel);
         add(pocetNohouField);
 
-
-
         pack();
-
-
     }
 
     private JPanel createButtonBar() {
@@ -112,7 +105,5 @@ public class Aplikace extends JFrame {
         int soucetNohou = (husy*2) + (kralici*4);
         String pocetNohou = Integer.toString(soucetNohou);
         pocetNohouField.setText(pocetNohou);
-
     }
-
 }
